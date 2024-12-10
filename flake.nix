@@ -18,9 +18,9 @@
         merlib = mkLib pkgs;
 
         mdbook = merlib.mdbook {
-          version = "0.4.42";
-          sha256 = "sha256-gdcHW30+vx+pNTKWJqArxVVYZyG73NnMMkU9JMUPyI8=";
-          cargoHash = "sha256-19BZe9sCDtSD8f6ZN5Neb2hj75VAW8pXSPCZdIOZF2s=";
+          version = "0.4.43";
+          sha256 = "sha256-aADNcuIeDef9+a3NOWQxo6IRnKJ6AbkvE4GqvFbubyI=";
+          cargoHash = "sha256-8K72sJywMKxX/31SJuCEoacWvHrpkuwGGLXJ9MsDkTE=";
         };
         mdbook-mermaid = merlib.mdbook-mermaid {
           version = "0.14.0";

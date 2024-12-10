@@ -22,8 +22,6 @@ rustPlatform.buildRustPackage rec {
     rev = "refs/tags/v${version}";
   };
 
-  patches = [ ./fix-init-title.patch ];
-
   nativeBuildInputs = [ installShellFiles ];
 
   buildInputs = lib.optionals stdenv.isDarwin [
