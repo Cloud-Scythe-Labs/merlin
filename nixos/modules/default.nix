@@ -38,6 +38,8 @@ in
         wantedBy = [ "multi-user.target" ];
 
         serviceConfig = {
+          DynamicUser = true;
+
           ExecStart = mdbook-serve;
 
           Restart = "always";
