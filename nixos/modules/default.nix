@@ -39,6 +39,7 @@ in
 
         serviceConfig = {
           DynamicUser = true;
+          AmbientCapabilities = "CAP_DAC_OVERRIDE";
           StateDirectory = "mdbook"; # Creates /var/lib/mdbook and grants access
           ReadWritePaths = [ mdBook-server.src ]; # Allows access to the source directory
 
