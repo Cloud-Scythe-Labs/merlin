@@ -40,7 +40,7 @@ in
         serviceConfig = {
           DynamicUser = true;
           StateDirectory = "mdbook"; # Creates /var/lib/mdbook and grants access
-          ReadWritePaths = [ config.mdbookService.src ]; # Allows access to the source directory
+          ReadWritePaths = [ mdBook-server.src ]; # Allows access to the source directory
 
           ExecStart = mdbook-serve;
 
