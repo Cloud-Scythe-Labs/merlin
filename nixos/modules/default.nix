@@ -33,7 +33,7 @@ in
     in
     lib.mkIf mdBook-server.enable {
       systemd.services.merlin-mdBook-server = {
-        description = mdbook-serve;
+        description = "merlin-mdBook-server";
 
         wantedBy = [ "multi-user.target" ];
 
